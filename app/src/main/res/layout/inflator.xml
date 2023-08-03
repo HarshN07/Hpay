@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/inflator"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/drawbor"
+    android:layout_gravity="center">
+
+
+    <EditText
+        android:id="@+id/splitNameToBeGiven"
+        android:layout_width="326dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
+        android:hint="Split Name"
+        android:textColor="@color/lightViolet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="326dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="128dp"
+        android:hint="Description"
+        android:textColor="@color/lightViolet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="326dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="212dp"
+        android:hint="Amount"
+        android:inputType="number"
+        android:textColor="@color/lightViolet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/btnbgk"
+        android:text="Split"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amount" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
