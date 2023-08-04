@@ -47,4 +47,7 @@ public class LoginResult implements Parcelable {
         dest.writeString(email);
         dest.writeDouble(balance);
     }
+    public void updateBalance(double amount){
+        balance-=amount;
+    }
 }

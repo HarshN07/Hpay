@@ -2,13 +2,12 @@ package com.example.hpay;
 
 public class TransactionDetails {
     private String id;
-    private String description;
+
     private String participant;
     private double amount;
 
-    public TransactionDetails(String id, String description, String participant, double amount) {
+    public TransactionDetails(String participant,String id, double amount) {
         this.id = id;
-        this.description = description;
         this.participant = participant;
         this.amount = amount;
     }
@@ -19,14 +18,6 @@ public class TransactionDetails {
 
     public void setId(String id) {
         this.id = id;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
     }
 
     public String getParticipant() {

@@ -14,4 +14,7 @@ public interface RetrofitInterface {
     Call<Void> executeSignup(@Body HashMap<String,String> map);
     @POST("/addsplit")
     Call<ApiResponse> createSplit(@Body SplitDetails splitDetails);
+    @POST("/addTransaction")
+    Call<ApiResponse> createTransaction(@Body TransactionDetails transactionDetails);
+
 }

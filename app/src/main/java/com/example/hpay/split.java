@@ -203,6 +203,14 @@ public class split extends AppCompatActivity {
                     ApiResponse apiResponse=response.body();
                     if (apiResponse.isSuccess()){
                         Toast.makeText(split.this, "Split created successfully", Toast.LENGTH_SHORT).show();
+
+                        double amountPerPerson=splitDetails.getAmount()/selectedUser.size();
+                        for(String userEmail : selectedUser){
+                            LoginResult user=getEmail(userEmail);
+                            if (user != null){
+                                user.updateBalance(amountPerPerson);
+                            }
+                        }
                     }
                 }
             }
@@ -213,5 +221,13 @@ public class split extends AppCompatActivity {
             }
         });
 
+    }
+    private LoginResult getEmail(String email){
+        for (LoginResult user: userList){
+            if(user.getEmail().equals(email)){
+                return user;
+            }
+        }
+        return null;
     }
 }

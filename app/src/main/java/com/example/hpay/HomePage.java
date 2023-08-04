@@ -103,7 +103,7 @@ public class HomePage extends AppCompatActivity {
         pay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                redirectActivity(HomePage.this,TransHis.class);
+                redirectActivity(HomePage.this,Transaction.class);
             }
         });
 
