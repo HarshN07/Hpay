@@ -43,7 +43,7 @@ public class split extends AppCompatActivity {
     private SplitSelectionAdapter splitSelectionAdapter;
     private RetrofitInterface retrofitInterface;
     private AlertDialog dialog;
-    private String baseURL="http://192.168.56.92.3000";//Replace the part before .3000 with the local host's IP address
+    private String baseURL="http://192.168.225.92.3000";//Replace the part before .3000 with the local host's IP address
     DrawerLayout drawerLayout;
     ImageView menu;
     EditText splitName, description,amountEntered;

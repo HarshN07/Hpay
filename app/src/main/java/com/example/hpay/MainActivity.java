@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     EditText mail,password;
     private Retrofit retrofit;
     private RetrofitInterface retrofitInterface;
-    private String baseURL="http://192.168.56.92.3000";//Replace the part before .3000 with the local host's IP address
+    private String baseURL="http://192.168.225.92.3000";//Replace the part before .3000 with the local host's IP address
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
