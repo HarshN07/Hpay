@@ -29,7 +29,7 @@ public class Transaction extends AppCompatActivity {
 
     private Retrofit retrofit;
     private RetrofitInterface retrofitInterface;
-    private String baseURL="http://192.168.225.92.3000";//Replace the part before .3000 with the local host's IP address
+    private String baseURL="http://192.168.225.92:3000";//Replace the part before .3000 with the local host's IP address
     DrawerLayout drawerLayout;
     ImageView menu;
     LinearLayout home,transHis,splitHis,logout;

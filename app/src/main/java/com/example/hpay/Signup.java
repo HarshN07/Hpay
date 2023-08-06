@@ -27,7 +27,7 @@ public class Signup extends AppCompatActivity {
     EditText mail,password,confirmPassword,name;
     private RetrofitInterface retrofitInterface;
     private Retrofit retrofit;
-    private String baseURL="http://192.168.225.92.3000";//Replace the part before .3000 with the local host's IP address
+    private String baseURL="http://192.168.225.92:3000";//Replace the part before .3000 with the local host's IP address
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
